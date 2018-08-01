@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.buttonCheck = new System.Windows.Forms.Button();
+            this.buttonFix = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonCheck
@@ -41,11 +42,22 @@
             this.buttonCheck.UseVisualStyleBackColor = true;
             this.buttonCheck.Click += new System.EventHandler(this.buttonCheck_Click);
             // 
+            // buttonFix
+            // 
+            this.buttonFix.Location = new System.Drawing.Point(171, 76);
+            this.buttonFix.Name = "buttonFix";
+            this.buttonFix.Size = new System.Drawing.Size(75, 43);
+            this.buttonFix.TabIndex = 1;
+            this.buttonFix.Text = "Checksum Fix";
+            this.buttonFix.UseVisualStyleBackColor = true;
+            this.buttonFix.Click += new System.EventHandler(this.buttonFix_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.buttonFix);
             this.Controls.Add(this.buttonCheck);
             this.Name = "Form1";
             this.Text = "eReaderTools";
@@ -56,6 +68,7 @@
         #endregion
 
         private System.Windows.Forms.Button buttonCheck;
+        private System.Windows.Forms.Button buttonFix;
     }
 }
 

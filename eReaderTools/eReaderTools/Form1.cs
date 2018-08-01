@@ -27,5 +27,17 @@ namespace eReaderTools
                 MessageBox.Show(Program.VerifyDataChecksumCard(ofd.OpenFile()).ToString());
             }
         }
+
+        private void buttonFix_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "*.*|*.*";
+            ofd.Multiselect = false;
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                Program.FixChecksumCard(ofd.FileName);
+                MessageBox.Show("Fixed");
+            }
+        }
     }
 }
